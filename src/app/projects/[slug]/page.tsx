@@ -26,14 +26,35 @@ export default async function ProjectDetailPage({
                     <Link href="/" className="font-black">
                         ← PARK SANGHYUG
                     </Link>
-                    <a
-                        href={`https://youtu.be/${project.youtubeId}`}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="rounded-full bg-[#1f2a37] px-5 py-2 text-sm font-bold text-white"
-                    >
-                        Demo Video
-                    </a>
+                    <div className="flex gap-2">
+                        {project.liveUrl && (
+                            <a href={project.liveUrl} target="_blank" rel="noreferrer"
+                                className="rounded-full bg-[#a6413a] px-5 py-2 text-sm font-bold text-white">
+                                Live App
+                            </a>
+                        )}
+
+                        {project.youtubeId && (
+                            <a href={`https://youtu.be/${project.youtubeId}`} target="_blank" rel="noreferrer"
+                                className="rounded-full bg-[#1f2a37] px-5 py-2 text-sm font-bold text-white">
+                                Demo Video
+                            </a>
+                        )}
+
+                        {project.youtubeShorts && (
+                            <a href={`https://youtube.com/shorts/${project.youtubeShorts}`} target="_blank" rel="noreferrer"
+                                className="rounded-full bg-[#ff0033] px-5 py-2 text-sm font-bold text-white">
+                                Shorts
+                            </a>
+                        )}
+
+                        {project.playStoreUrl && (
+                            <a href={project.playStoreUrl} target="_blank" rel="noreferrer"
+                                className="rounded-full bg-[#2563eb] px-5 py-2 text-sm font-bold text-white">
+                                Google Play
+                            </a>
+                        )}
+                    </div>
                 </div>
             </nav>
 
@@ -103,17 +124,19 @@ export default async function ProjectDetailPage({
                             </div>
                         )}
 
-                        <div className="mt-10 overflow-hidden rounded-[2rem] bg-black shadow-2xl">
-                            <div className="aspect-video">
-                                <iframe
-                                    src={`https://www.youtube.com/embed/${project.youtubeId}`}
-                                    title={`${project.title} Demo`}
-                                    className="h-full w-full"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowFullScreen
-                                />
+                        {project.youtubeId && (
+                            <div className="mt-10 overflow-hidden rounded-[2rem] bg-black shadow-2xl">
+                                <div className="aspect-video">
+                                    <iframe
+                                        src={`https://www.youtube.com/embed/${project.youtubeId}`}
+                                        title={`${project.title} Demo`}
+                                        className="h-full w-full"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowFullScreen
+                                    />
+                                </div>
                             </div>
-                        </div>
+                        )}
                     </div>
                 </div>
             </section>
