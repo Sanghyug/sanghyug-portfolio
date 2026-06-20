@@ -108,7 +108,7 @@ export const projectsData = [
     id: "04",
     title: "비빔팡 (Bibimpang)",
     type: "K-Food 매치3 게임",
-    stage: "불고기 MVP 완성",
+    stage: "불고기, 떡볶이 등 13개 한식 레시피 완성",
     role: "기획 · 게임 로직 · 사업화",
     tags: ["Match3", "K-Food", "Reward Commerce", "O2O Marketing"],
     desc: "한식 양념을 퍼즐 타일로 활용해 자연스럽게 레시피를 학습하는 매치3 게임입니다. 완성 보상을 쿠폰 및 제품 구매로 연결하는 O2O 마케팅 플랫폼 구조입니다.",
