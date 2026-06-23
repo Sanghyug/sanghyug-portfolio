@@ -92,20 +92,20 @@ export const projectsData = [
     id: "02",
     title: "스핀고 (SpinGo)",
     type: "물리 기반 캐주얼 게임",
-    stage: "Google Play 비공개 테스트 진행 중",
-    role: "기획 · 게임 로직 구현",
+    stage: "Google Play 출시",
+    role: "기획 · 게임 로직 구현 · 출시",
+
     tags: [
       "Flutter",
       "Flame Game Engine",
       "Physics Interaction",
       "Casual Game",
-      "Google Play Closed Test",
+      "Google Play",
     ],
-    desc: "서커스 접시돌리기에서 영감을 받은 물리 기반 캐주얼 게임입니다. 접시를 너무 천천히 돌리면 떨어지고, 너무 빠르게 돌리면 하늘로 날아갑니다. 바람과 원숭이의 방해를 극복하며 여러 개의 접시를 동시에 관리해야 하며, 뇌자극 모드에서는 구구단 문제까지 함께 풀어야 합니다. 현재 Google Play 출시를 위한 비공개 테스트를 진행 중입니다.",
-    youtubeId: "-7IIYf7Y_2M",
+    desc: "서커스 접시돌리기에서 영감을 받은 물리 기반 캐주얼 게임입니다. 접시를 너무 천천히 돌리면 떨어지고, 너무 빠르게 돌리면 하늘로 날아갑니다. 바람과 원숭이의 방해를 극복하며 여러 개의 접시를 동시에 관리해야 하며, 뇌자극 모드에서는 구구단 문제까지 함께 풀어야 합니다. Flutter와 Flame 엔진으로 개발하여 Google Play에 출시했습니다.", youtubeId: "-7IIYf7Y_2M",
     youtubeShorts: "r-R6zsOzrUk",
-    playStoreUrl: "",
-    githubUrl: "https://github.com/Sanghyug/SpinGo-expansion",
+    playStoreUrl:
+      "https://play.google.com/store/apps/details?id=com.bamnamulab.spingo&pcampaignid=web_share", githubUrl: "https://github.com/Sanghyug/SpinGo-expansion",
     wikiUrl: "https://github.com/Sanghyug/SpinGo-expansion/wiki",
 
     slug: "spingo",
@@ -125,7 +125,7 @@ export const projectsData = [
     role: "AI Flow · UX · 백엔드 연동",
     tags: ["LLM Mediation Flow", "Emotional UX", "Firebase", "Cloud Run"],
     desc: "청소년 또래 관계 갈등을 예방·중재·회복하는 AI 기반 플랫폼입니다. 사건과 감정을 정리하고 공동 중재 대화를 통해 관계 보고서를 생성합니다. 토스 심사 대기 중입니다.",
-    youtubeId: "XuWvK5Nwn3k",
+    youtubeId: "ARbE5tWZ9TE",
 
     slug: "between",
     icon: "/projects/between/icon.png",
